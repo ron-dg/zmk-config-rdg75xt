@@ -1,8 +1,8 @@
 # RDG75XT ZMK Configuration
 
-## 6.25u with Macro Keys
+## 10u with Macro Keys
 
-![](images/625-macro-default.png)
+![](images/10-macro-default.png)
 
 ## Remapping
 
