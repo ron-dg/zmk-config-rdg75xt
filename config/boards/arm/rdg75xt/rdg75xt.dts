@@ -73,19 +73,6 @@ RC(5,0) RC(5,1) RC(5,2)                                         RC(5,8)         
         >;
     };
 
-	sensors {
-		compatible = "zmk,keymap-sensors";
-		sensors = <&encoder>;
-	};
-
-	encoder: encoder_left {
-		compatible = "alps,ec11";
-		label = "LEFT_ENCODER";
-		a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <2>;
-	};
-
 	vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
