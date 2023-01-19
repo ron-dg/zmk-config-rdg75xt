@@ -47,5 +47,5 @@ jobs:
       - name: Archive
         uses: actions/upload-artifact@v2
         with:
-          name: 625-macro-firmware
+          name: 10-macro-firmware
           path: '*.uf2'
