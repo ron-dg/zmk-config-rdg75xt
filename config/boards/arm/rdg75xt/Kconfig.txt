@@ -1,0 +1,8 @@
+# RDG75XT board configuration
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config BOARD_RDG75XT
+	bool "RDG75XT"
+	depends on SOC_NRF52840_QIAA

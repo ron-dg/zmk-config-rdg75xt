@@ -1,0 +1,53 @@
+# RDG75XT board configuration
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_RDG75XT
+
+config ZMK_KEYBOARD_NAME
+	default "RDG75XT"
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+	default y
+
+config SPI
+    default y
+
+config ZMK_DISPLAY
+	select LVGL_FONT_MONTSERRAT_26
+
+if ZMK_DISPLAY
+
+config LS0XX
+	default y
+
+config LVGL_BITS_PER_PIXEL
+	default 1
+
+choice LVGL_COLOR_DEPTH
+	default LVGL_COLOR_DEPTH_1
+endchoice
+
+endif # ZMK_DISPLAY
+
+endif # BOARD_RDG75XT
