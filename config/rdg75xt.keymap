@@ -22,7 +22,7 @@
                 &kp ENTER         &kp DEL          &kp LCTRL &kp LGUI  &kp LALT                                &kp SPACE                               &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         fn_layer {
@@ -35,7 +35,7 @@
                 &trans     &trans     &trans      &trans       &trans                                              &trans                                  &trans    &trans    &trans    &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
